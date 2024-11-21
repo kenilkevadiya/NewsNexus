@@ -1,0 +1,17 @@
+{
+  "name": "user-registration-function",
+  "version": "1.0.0",
+  "description": "Google Cloud Function for user registration",
+  "main": "index.js",
+  "scripts": {
+    "start": "functions-framework --target=helloHttp",
+    "deploy": "gcloud functions deploy helloHttp --runtime=nodejs20 --trigger-http --allow-unauthenticated"
+  },
+  "dependencies": {
+    "firebase-admin": "^11.10.1"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "private": true
+}
